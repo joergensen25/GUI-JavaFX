@@ -1,3 +1,5 @@
+package lektion15.opgave4;
+
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
@@ -18,6 +20,7 @@ public class Opgave4 extends Application {
         stage.show();
 
     }
+
     private final TextField txfCelsius = new TextField(); // 0, 1
     private final TextField txfFahrenheit = new TextField(); // 2, 1
 

@@ -1,3 +1,5 @@
+package lektion15.opgave3;
+
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
@@ -20,6 +22,7 @@ public class Opgave3 extends Application {
         stage.show();
 
     }
+
     int sum = 0;
     private final TextField txfIndskud = new TextField(); // 1, 0
     private final TextField txfRente = new TextField();
@@ -42,7 +45,6 @@ public class Opgave3 extends Application {
 
         Label lblFremtidigVærdi = new Label("Fremtidig værdi"); // 0, 4
         pane.add(lblFremtidigVærdi, 0, 4);
-
 
 
         pane.add(lblFremtidigVærdiHolder, 1, 4);
@@ -69,10 +71,9 @@ public class Opgave3 extends Application {
         int antalR = Integer.parseInt(strAntalR);
 
 
-        double sum = indskud * pow((1+rente), antalR);
+        double sum = indskud * pow((1 + rente), antalR);
 
         lblFremtidigVærdiHolder.setText(String.format("%.2f", sum));
-
 
 
     }

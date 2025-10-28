@@ -1,3 +1,5 @@
+package lektion15.opgave5;
+
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
@@ -21,6 +23,7 @@ public class Opgave5 extends Application {
 
     private final TextArea txaList = new TextArea();
     private final TextField txfName = new TextField();
+
     private void initContent(GridPane pane) {
         pane.setGridLinesVisible(false);
         pane.setPadding(new Insets(20));
@@ -31,7 +34,8 @@ public class Opgave5 extends Application {
         pane.add(lblName, 0, 0);
 
         pane.add(txfName, 0, 1);
-        pane.add(txaList,0,4);
+        pane.add(txaList, 0, 4);
+        txaList.setEditable(false);
 
         Button btnAddName = new Button("Tilføj navn"); // 0, 2
         pane.add(btnAddName, 0, 2);
@@ -39,7 +43,6 @@ public class Opgave5 extends Application {
 
         Button btnClear = new Button("Clear");
         pane.add(btnClear, 1, 2);
-
 
 
         btnAddName.setOnAction(event -> this.addNameAction());
